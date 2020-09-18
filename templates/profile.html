@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block profile %}
+<h1>Profile Block</h1>
+<ul>
+    {% for item in user_album %}
+        <li>{{ forloop.counter }}, {{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock profile %}
