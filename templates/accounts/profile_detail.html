@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
-{% block profile_details%}
-{% for i in album %}
+{% block profile_detail%}
+{% for i in Profile %}
 <ul>
-    <li>{{ i }}</li>
-    <li>{{ i.image_title }}</li>
-    <li>{{ i.image_description }}</li>
-    <li>{{ i.user_images }}</li>
+    <li a>{{ i.name }}</li>
+    <li a>{{ i.bio }}</li>
+    <li a>{{ i.address }}</li>
 </ul>
 {% endfor %}
-{% endblock profile_details %}
+{% endblock profile_detail %}
